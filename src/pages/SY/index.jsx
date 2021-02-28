@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import Button from './components/Button';
 
 const Block = styled.div`
@@ -12,13 +12,22 @@ const Block = styled.div`
 
 function SY() {
   return (
-    <div>
+    <ThemeProvider
+      theme={{
+        palette: {
+          blue: '#228be6',
+          gray: '#495057',
+          pink: '#f06595'
+        }
+      }}
+    >
       <Block>
-        <Button>
-          스타일 1
-        </Button>
+        <Button>BUTTON</Button>
+        <Button>BUTTON</Button>
+        <Button color="gray">BUTTON</Button>
+        <Button color="pink">BUTTON</Button>
       </Block>
-    </div>
+    </ThemeProvider>
   );
 }
 

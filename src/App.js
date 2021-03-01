@@ -7,7 +7,7 @@ import {
 import './App.css';
 import Ji from './pages/Ji';
 import Main from './pages/Main';
-import Se from './pages/Se';
+import SY from './pages/SY';
 import Seul from './pages/Seul';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route path="/sw"><Seul/></Route>
         <Route path="/jy"><Ji/></Route>
-        <Route path="/sy"><Se/></Route>
+        <Route path="/sy"><SY/></Route>
         <Route path="/"><Main/></Route>
       </Switch>
     </Router>

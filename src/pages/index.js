@@ -12,13 +12,13 @@ import {LoginGit} from './Logins'
 export const PagesContent = () => {
     return (
         <Switch>
-            <Redirect from="/" to="/Main" exact />
+            <Redirect from="/" to="/main" exact />
             
-            <Route path="/Main" exact component={Main} />
-            <Route path="/Logins/LoginGit" exact component={LoginGit} />
+            <Route path="/main" exact component={Main} />
+            <Route path="/logins/logingit" exact component={LoginGit} />
 
             { /*    404    */ }
-            <Redirect to="/Main" />
+            <Redirect to="/main" />
         </Switch>
     );
 };

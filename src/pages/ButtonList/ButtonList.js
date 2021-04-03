@@ -2,7 +2,8 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Button from './../../components/Button';
 
-const Block = styled.div`
+
+const AppBlock = styled.div`
   width: 512px;
   margin: 0 auto;
   margin-top: 4rem;
@@ -10,7 +11,15 @@ const Block = styled.div`
   padding: 1rem;
 `;
 
+const ButtonGroup = styled.div`
+  & + & {
+    margin-top: 1rem;
+  }
+`;
+
+
 function ButtonList() {
+  
   return (
     <ThemeProvider
       theme={{
@@ -21,12 +30,53 @@ function ButtonList() {
         }
       }}
     >
-      <Block>
-        <Button>BUTTON</Button>
-        <Button>BUTTON</Button>
-        <Button color="gray">BUTTON</Button>
-        <Button color="pink">BUTTON</Button>
-      </Block>
+      <AppBlock>
+        <ButtonGroup>
+          <Button size="large">BUTTON</Button>
+          <Button>BUTTON</Button>
+          <Button size="small">BUTTON</Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button color="gray" size="large">
+            BUTTON
+          </Button>
+          <Button color="gray">BUTTON</Button>
+          <Button color="gray" size="small">
+            BUTTON
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button color="pink" size="large">
+            BUTTON
+          </Button>
+          <Button color="pink">BUTTON</Button>
+          <Button color="pink" size="small">
+            BUTTON
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button size="large" outline>
+            BUTTON
+          </Button>
+          <Button color="gray" outline>
+            BUTTON
+          </Button>
+          <Button color="pink" size="small" outline>
+            BUTTON
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button size="large" fullWidth>
+            BUTTON
+          </Button>
+          <Button size="large" color="gray" fullWidth>
+            BUTTON
+          </Button>
+          <Button size="large" color="pink" fullWidth>
+            BUTTON
+          </Button>
+        </ButtonGroup>
+      </AppBlock>
     </ThemeProvider>
   );
 }

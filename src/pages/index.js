@@ -6,7 +6,7 @@ import {
 } from 'react-router';
 
 import Main from './Main'
-import {LoginGit} from './Logins'
+import LoginGit from './Logins/LoginGit'
 
 //------ Route Definitions --------
 export const PagesContent = () => {

@@ -5,9 +5,7 @@ function Main({history}) {
     
     return (
     <div>
-        <button onClick={()=>history.push("/sw")}>슬우페이지</button>
-        <button onClick={()=>history.push("/jy")}>지영페이지</button>
-        <button onClick={()=>history.push("/sy")}>세연페이지</button>
+        물개 죠아 팀의 웹 사이트입니당.
     </div>
     );
 }

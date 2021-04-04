@@ -7,8 +7,13 @@ function Main({history}) {
     <div>
         물개 죠아 팀의 웹 사이트입니당.
         <a href="/buttonlist">임시링크-버튼리스트</a>
+        <br/>
         <a href="/dropdownlist">임시링크-드롭다운리스트</a>
+        <br/>
         <a href="/radiolist">임시링크-라디오리스트</a>
+        <br/>
+        <a href="/inputlist">임시링크-인풋</a>
+        <br/>
         <a href="/logins/logingit">임시링크-로그인깃</a>
     </div>
     );

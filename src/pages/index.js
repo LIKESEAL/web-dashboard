@@ -6,7 +6,10 @@ import {
 } from 'react-router';
 
 import Main from './Main'
-import {LoginGit} from './Logins'
+import ButtonList from './ButtonList';
+import DropdownList from './DropdownList';
+import RadioList from './RadioList';
+import LoginGit from './Logins/LoginGit';
 
 //------ Route Definitions --------
 export const PagesContent = () => {
@@ -15,6 +18,9 @@ export const PagesContent = () => {
             <Redirect from="/" to="/main" exact />
             
             <Route path="/main" exact component={Main} />
+            <Route path="/buttonlist" exact component={ButtonList} />
+            <Route path="/dropdownlist" exact component={DropdownList} />
+            <Route path="/radiolist" exact component={RadioList} />
             <Route path="/logins/logingit" exact component={LoginGit} />
 
             { /*    404    */ }

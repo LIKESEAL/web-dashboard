@@ -16,7 +16,7 @@ const RadioGroup = styled.div`
   }
 `;
 
-function App() {
+function RadioList() {
 
   return (
     <ThemeProvider
@@ -48,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default RadioList;

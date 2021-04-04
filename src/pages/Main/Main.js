@@ -5,11 +5,14 @@ function Main({history}) {
     
     return (
     <div>
-        <button onClick={()=>history.push("/sw")}>슬우페이지</button>
-        <button onClick={()=>history.push("/jy")}>지영페이지</button>
-        <button onClick={()=>history.push("/sy")}>세연페이지</button>
+        물개 죠아 팀의 웹 사이트입니당.
+        <a href="/buttonlist">임시링크-버튼리스트</a>
+        <a href="/dropdownlist">임시링크-드롭다운리스트</a>
+        <a href="/radiolist">임시링크-라디오리스트</a>
+        <a href="/logins/logingit">임시링크-로그인깃</a>
     </div>
     );
+
 }
 
 export default withRouter(Main);

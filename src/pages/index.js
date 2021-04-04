@@ -7,6 +7,7 @@ import {
 
 import Main from './Main'
 import ButtonList from './ButtonList';
+import DropdownList from './DropdownList';
 import LoginGit from './Logins/LoginGit'
 
 //------ Route Definitions --------
@@ -17,6 +18,7 @@ export const PagesContent = () => {
             
             <Route path="/main" exact component={Main} />
             <Route path="/buttonlist" exact component={ButtonList} />
+            <Route path="/dropdownlist" exact component={DropdownList} />
             <Route path="/logins/logingit" exact component={LoginGit} />
 
             { /*    404    */ }

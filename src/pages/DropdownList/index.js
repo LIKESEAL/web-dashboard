@@ -1,3 +1,3 @@
-import DropdownLsit from './DropdownList'
+import DropdownList from './DropdownList'
 
-export default DropdownLsit;
+export default DropdownList;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import Input from "../../components/Input";
 
 const AppBlock = styled.div`
   width: 512px;
@@ -26,7 +27,20 @@ function InputList() {
       }}
     >
       <AppBlock>
-        hi~~
+        <InputGroup>
+            <Input
+                contentTitle={"Username or email address"}
+            contentHolder={"아이디를 입력해주세요"}
+            />
+        </InputGroup>
+
+          <InputGroup>
+              <Input
+                  contentTitle={"Password"}
+                  contentHolder={"비밀번호를 입력해주세요"}
+                  size={"small"}
+              filtering/>
+          </InputGroup>
       </AppBlock>
     </ThemeProvider>
   );

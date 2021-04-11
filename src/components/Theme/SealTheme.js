@@ -6,7 +6,7 @@ const theme={
     blue: '#228be6',
     gray: '#f6f8fa',
     pink: '#f06595',
-    green: '#2ea44f'
+    green: '#2ea44f',
   }
 };
 

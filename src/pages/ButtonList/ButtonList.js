@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import Button from './../../components/Button';
+import Button from './../../components/Button'
+import { SealTheme } from './../../components';
 
 
 const AppBlock = styled.div`
@@ -21,15 +22,7 @@ const ButtonGroup = styled.div`
 function ButtonList() {
   
   return (
-    <ThemeProvider
-      theme={{
-        palette: {
-          blue: '#228be6',
-          gray: '#495057',
-          pink: '#f06595'
-        }
-      }}
-    >
+    <SealTheme>
       <AppBlock>
         <ButtonGroup>
           <Button size="large">BUTTON</Button>
@@ -77,7 +70,7 @@ function ButtonList() {
           </Button>
         </ButtonGroup>
       </AppBlock>
-    </ThemeProvider>
+    </SealTheme>
   );
 }
 

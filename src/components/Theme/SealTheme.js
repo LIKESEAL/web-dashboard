@@ -10,9 +10,11 @@ const theme={
   }
 };
 
-function SealTheme() {
+function SealTheme({children}) {
   return (
-    <ThemeProvider theme = {theme} /> 
+    <ThemeProvider theme = {theme}>
+      {children}
+    </ThemeProvider>
     );
 }
 

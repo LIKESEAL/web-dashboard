@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import Card from './../../../components/Card';
 import Input from './../../../components/Input';
 import Button from './../../../components/Button';
+import { SealTheme } from './../../../components'
 
 const AppBlock = styled.div`
   margin: 0 auto;
@@ -19,16 +20,7 @@ const Group = styled.div`
 function LoginGit() {
 
   return (
-    <ThemeProvider
-      theme={{
-        palette: {
-          blue: '#228be6',
-          gray: '#f6f8fa',
-          pink: '#f06595',
-          green: '#2ea44f',
-        }
-      }}
-    >
+    <SealTheme>
       <AppBlock>
         <div>LoginGit Page</div>
         <Card color="gray" size="small">
@@ -54,7 +46,7 @@ function LoginGit() {
           </Group>
         </Card>
       </AppBlock>
-    </ThemeProvider>
+    </SealTheme>
   );
 }
 

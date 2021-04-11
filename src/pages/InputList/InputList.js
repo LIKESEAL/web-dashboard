@@ -30,7 +30,7 @@ function InputList() {
         <InputGroup>
             <Input
                 contentTitle={"Username or email address"}
-            contentHolder={"아이디를 입력해주세요"}
+                contentHolder={"아이디를 입력해주세요"}
             />
         </InputGroup>
 

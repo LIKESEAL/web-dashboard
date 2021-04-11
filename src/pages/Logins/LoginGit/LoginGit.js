@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Card from './../../../components/Card';
 import Input from './../../../components/Input';
+import Button from './../../../components/Button';
 
 const AppBlock = styled.div`
   margin: 0 auto;
@@ -44,6 +45,9 @@ function LoginGit() {
               size={"small"}
               filtering />
           </InputGroup>
+          <Button size="large" color="pink" outline fullWidth>
+            BUTTON
+          </Button>
         </Card>
       </AppBlock>
     </ThemeProvider>

@@ -31,15 +31,19 @@ const colorStyles = css`
 const sizes = {
   large: {
     height: '3rem',
-    fontSize: '1.25rem'
+    fontSize: '1.25rem',
+    lineHeight: '2.5rem',
+
   },
   medium: {
     height: '2.25rem',
-    fontSize: '1rem'
+    fontSize: '1rem',
+    lineHeight: '2rem',
   },
   small: {
     height: '1.75rem',
-    fontSize: '0.875rem'
+    fontSize: '0.875rem',
+    lineHeight: '1.5rem'
   }
 };
 
@@ -47,6 +51,7 @@ const sizeStyles = css`
   ${({ size }) => css`
     height: ${sizes[size].height};
     font-size: ${sizes[size].fontSize};
+    line-height: ${sizes[size].lineHeight};
   `}
 `;
 

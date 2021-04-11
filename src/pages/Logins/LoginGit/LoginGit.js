@@ -12,7 +12,7 @@ const AppBlock = styled.div`
   text-align: center;
 `;
 
-const InputGroup = styled.div`
+const Group = styled.div`
   margin-top: 1rem;
 `;
 
@@ -24,31 +24,34 @@ function LoginGit() {
         palette: {
           blue: '#228be6',
           gray: '#f6f8fa',
-          pink: '#f06595'
+          pink: '#f06595',
+          green: '#2ea44f',
         }
       }}
     >
       <AppBlock>
         <div>LoginGit Page</div>
         <Card color="gray" size="small">
-          <InputGroup>
+          <Group>
             <Input
               contentTitle={"Username or email address"}
               contentHolder={"아이디를 입력해주세요"}
               size={"small"}
             />
-          </InputGroup>
+          </Group>
 
-          <InputGroup>
+          <Group>
             <Input
               contentTitle={"Password"}
               contentHolder={"비밀번호를 입력해주세요"}
               size={"small"}
               filtering />
-          </InputGroup>
-          <Button size="large" color="pink" outline fullWidth>
-            BUTTON
+          </Group>
+          <Group>
+          <Button size="medium" color="green" fullWidth>
+            sign in
           </Button>
+          </Group>
         </Card>
       </AppBlock>
     </ThemeProvider>

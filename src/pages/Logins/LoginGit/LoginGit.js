@@ -34,6 +34,7 @@ function LoginGit() {
             <Input
               contentTitle={"Username or email address"}
               contentHolder={"아이디를 입력해주세요"}
+              size={"small"}
             />
           </InputGroup>
 

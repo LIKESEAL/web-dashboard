@@ -42,7 +42,7 @@ const sizes = {
     small: {
         height: '1.5rem',
         fontSize: '0.875rem',
-        width: '10rem',
+        width: 'fillOpacity'
     }
 };
 
@@ -57,11 +57,11 @@ const StyledInput = styled.input`
   /* 공통 스타일 */
   padding: 5px 12px;
   margin-top: 5px;
-  margin-bottom: 15px;
   vertical-align: middle;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
-  outline: none; 
+  outline: none;
+  width: -webkit-fill-available;
   
   /* 크기 */
   ${sizeStyles}
@@ -70,7 +70,6 @@ const StyledInput = styled.input`
 const StyledInputTitle = styled.div`
 display: block;
 text-align: left;
-margin-bottom: 7px;
 font-weight : 400;
 vertical-align: middle;
 font-size: 14px;
@@ -89,7 +88,7 @@ function Input({ contentTitle, contentHolder, size, width, filtering, handler, .
     const [inputState, setInputState] = useState('');
 
     return (
-        <>
+        <div>
             {contentTitle && <StyledInputTitle size={size}>{contentTitle}</StyledInputTitle>}
         <StyledInput
             type={"text"}
@@ -100,7 +99,7 @@ function Input({ contentTitle, contentHolder, size, width, filtering, handler, .
             value={filtering ? "*".repeat(inputState.length) : inputState}
             onChange={e => setInputState(e.target.value)}
         />
-        </>
+        </div>
     );
 }
 

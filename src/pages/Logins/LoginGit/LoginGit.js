@@ -1,9 +1,11 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import Card from './../../../components/Card';
-import Input from './../../../components/Input';
-import Button from './../../../components/Button';
-import { SealTheme } from './../../../components';
+import { 
+  Button,
+  Card,
+  Input,
+  SealTheme 
+} from './../../../components';
 
 const AppBlock = styled.div`
   margin: 0 auto;

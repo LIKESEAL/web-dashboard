@@ -1,6 +1,6 @@
 import Button from './Button';
 import Card from './Card';
-import BasicDropdown from './Dropdown';
+import Dropdown from './Dropdown';
 import Input from './Input';
 import Radio from './Radio';
 import SealTheme from './Theme';
@@ -8,7 +8,7 @@ import SealTheme from './Theme';
 export {
     Button,
     Card,
-    BasicDropdown,
+    Dropdown,
     Input,
     Radio,
     SealTheme

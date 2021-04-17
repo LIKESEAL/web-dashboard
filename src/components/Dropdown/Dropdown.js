@@ -125,7 +125,7 @@ const SubA = styled.a`
   }
 `;
 
-function BasicDropdown({ contents, color, size, ...rest }) {
+function Dropdown({ contents, color, size, ...rest }) {
   const [dropdownState, setDropdownState] = useState("dropdown");  
 
   const handleDropdownState = (content) => {
@@ -148,9 +148,9 @@ function BasicDropdown({ contents, color, size, ...rest }) {
   );
 }
 
-BasicDropdown.defaultProps = {
+Dropdown.defaultProps = {
   color: 'blue',
   size: 'medium'
 };
 
-export default BasicDropdown;
+export default Dropdown;

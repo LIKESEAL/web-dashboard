@@ -18,6 +18,8 @@ function Main({history}) {
         <a href="/cardlist">임시링크-카드</a>
         <br/>
         <a href="/logins/logingit">임시링크-로그인깃</a>
+        <br/>
+        <a href="/email/inbox">임시링크-Inbox</a>
     </div>
     );
 

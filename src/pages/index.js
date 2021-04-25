@@ -12,7 +12,7 @@ import RadioList from './RadioList';
 import InputList from './InputList';
 import CardList from './CardList';
 import LoginGit from './Logins/LoginGit';
-import Inbox from './Email';
+import {Inbox, Detail} from './Email';
 
 //------ Route Definitions --------
 export const PagesContent = () => {
@@ -28,7 +28,7 @@ export const PagesContent = () => {
             <Route path="/cardlist" exact component={CardList} />
             <Route path="/logins/logingit" exact component={LoginGit} />
             <Route path="/email/inbox" exact component={Inbox} />
-
+            <Route path="/email/detail" exact component={Detail}/>
             { /*    404    */ }
             <Redirect to="/main" />
         </Switch>

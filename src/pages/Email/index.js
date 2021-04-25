@@ -1,4 +1,7 @@
 import Inbox from './Inbox'
+import Detail from './Detail'
 
-
-export default Inbox;
+export {
+    Inbox,
+    Detail
+};

@@ -17,7 +17,6 @@ export default function UserInfo({ userName, userEmail, ...rest }) {
         <div>
             <StyledUserName>{userName}</StyledUserName>
             <StyledUserEmail>{userEmail}</StyledUserEmail>
-            <hr/>
         </div>
     );
 }

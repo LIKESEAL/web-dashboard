@@ -22,6 +22,8 @@ function Main({history}) {
         <a href="/email/inbox">임시링크-Inbox</a>
         <br/>
         <a href="/email/detail">임시링크-Detail</a>
+        <br/>
+        <a href="/email/newemail">임시링크-이메일 쓰기</a>
     </div>
     );
 

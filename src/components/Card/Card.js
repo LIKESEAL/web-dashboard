@@ -7,6 +7,7 @@ const colorStyles = css`
         const selected = theme.palette[color];
         return css`
       background: ${selected};
+      border: 1px solid #eaecef;
       display: block;
       align-items: center;
       text-decoration: none;
@@ -42,7 +43,6 @@ const sizeStyles = css`
 const CardBlock = styled.div`
   margin: 0 auto;
   margin-top: 2rem;
-  border: 1px solid #eaecef;
   border-radius: 6px;
   padding: 20px;
   text-align: center;

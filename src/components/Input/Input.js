@@ -56,7 +56,6 @@ const sizeStyles = css`
 const StyledInput = styled.input`
   /* 공통 스타일 */
   padding: 5px 12px;
-  margin-top: 5px;
   vertical-align: middle;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
@@ -69,6 +68,7 @@ const StyledInput = styled.input`
 
 const StyledInputTitle = styled.div`
 display: block;
+margin-bottom: 5px;
 text-align: left;
 font-weight : 400;
 vertical-align: middle;
